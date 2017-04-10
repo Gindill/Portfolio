@@ -7,3 +7,5 @@ Here are examples of my work done in different programming languages.
 * **simple e-shop in PHP** - Small online store selling movies. Implemented authentication, adding users, working with sessions, storing data in mySQL. Used the PHP language.
 
 * **application form** - Registration form of participant of the Olympic games on programming. Use JavaScript and Bootstrap.
+
+* **landing page** - Landing page, responsive design, without bootstrap.

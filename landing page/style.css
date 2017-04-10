@@ -1,0 +1,515 @@
+/*--- цветовая схема ---*/
+.bg-dark-solid {
+    background-color: rgb(80, 56, 48);
+}
+
+.bg-dark-transparent {
+    background-color: rgba(80, 56, 48, 0.8);
+}
+
+.bg-light-solid {
+    background-color: rgb(217, 210, 190);
+}
+
+.bg-light-transparent {
+    background-color: rgba(217, 210, 190, 0.8);
+}
+
+.bg-white-solid {
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-white-transparent {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.txt-dark {
+    color: rgb(80, 56, 48);
+}
+
+.txt-light {
+    color: rgb(217, 210, 190);
+}
+
+.txt-white {
+    color: white;
+}
+
+.txt-black {
+    color: black;
+}
+
+/*--- общие стили ---*/
+.uppercase {
+    text-transform: uppercase;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 12pt;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header nav, .introduction, .main, .contacts {
+    padding-left: 5%;
+    padding-right: 5%;
+    min-width: 320px;
+}
+
+nav, .introduction {
+    display: flex;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: serif;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/*--- фон заголовка ---*/
+header {
+    background: url("img/header1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 38em;
+    animation: promo 15s infinite;
+}
+
+@media (min-width: 900px) {
+    header {
+        height: 33em;
+    }
+}
+
+@keyframes promo {
+    0% {
+        background: url("img/header1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    35% {
+        background: url("img/header2.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    70% {
+        background: url("img/header3.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/*--- верхнее меню ---*/
+header nav {
+    height: 100%;
+    background: radial-gradient(100% 90% at 50% 50%, rgba(0, 0, 0, 0), rgb(80, 56, 48));
+    padding-top: 1.6em;
+    flex-direction: column;
+}
+
+.logo {
+    width: 12ch;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: serif;
+    font-size: 1.1em;
+    text-align: center;
+    order: 1;
+}
+
+header nav ul {
+    margin: .5em auto;
+    list-style-type: none;
+    order: 2;
+}
+
+@media (min-width: 900px) {
+    header nav {
+        flex-direction: row;
+    }
+    .logo {
+        order: 2;
+    }
+    header nav ul {
+        order: 1;
+    }
+}
+
+nav img {
+    display: block;
+    padding: 1ch;
+    margin: auto;
+}
+
+nav li {
+    text-align: center;
+    display: inline-block;
+    margin-left: 1ch;
+    margin-right: 1ch;
+}
+
+.search {
+    margin: 0.5em auto;
+    order: 3;
+}
+
+.search input {
+    width: 38ch;
+    height: 2em;
+    border-radius: 5px;
+    border-color: inherit;
+    margin-top: 0.5em;
+}
+
+.search button {
+    width: 4ch;
+    height: 2em;
+    float: right;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*--- акционный блок ---*/
+.promo {
+    width: 46ch;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -45%;
+}
+
+@media (min-width: 900px) {
+    .promo {
+        margin-left: 5%;
+        top: -60%;
+    }
+}
+
+.promo .top-line {
+    height: 4px;
+}
+
+.promo .promo-main {
+    height: 100%;
+    padding: 7%;
+}
+
+ .promo input {
+     width: 36ch;
+     height: 2em;
+     border: none;
+ }
+
+.promo button {
+    width: 12ch;
+    height: 2em;
+    border: none;
+    background: url("img/button.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/*--- блок описания и новостей ---*/
+.introduction {
+    flex-direction: column;
+}
+
+.introduction > div {
+    width: 100%;
+    padding: 2.5em 4.5ch;
+}
+
+@media (min-width: 900px) {
+    .introduction {
+        flex-direction: row;
+    }
+    .introduction > div {
+        width: 50%;
+        margin: 2.5em 0;
+        padding: 0 4.5ch;
+    }
+}
+
+.intro {
+    text-align: left;
+    order: 1;
+}
+
+.news {
+    text-align: left;
+    border-top: solid 1px rgb(80, 56, 48);
+    order: 2;
+}
+
+@media (min-width: 900px) {
+    .intro {
+        text-align: right;
+    }
+    .news {
+        border-top: none;
+        border-left: solid 1px rgb(80, 56, 48);
+    }
+}
+
+.news > div {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .news > div {
+        width: 50%;
+        float: left;
+    }
+}
+
+.news .thumbnail {
+    position: relative;
+}
+
+.news img {
+    width: 100%;
+    padding: 0 2.5ch;
+}
+
+@media (min-width: 768px) {
+    .news img {
+        padding: 0;
+    }
+}
+
+.news .thumbnail .date {
+    width: 7ch;
+    height: 2.5em;
+    position: absolute;
+    top: 0;
+    left: 4ch;
+    background: url("img/date.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+    text-align: center;
+}
+
+.news .news-text {
+    padding: 0 2.5ch;
+}
+
+.news .news-text a {
+    display: block;
+    width: 10ch;
+    height: 2em;
+    background: url("img/read.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+    text-align: center;
+}
+
+/*--- основные направления ---*/
+.main {
+    background: url("img/main.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 26em;
+}
+
+.title {
+	display: flex;
+    width: 100%;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+.title h1 {
+	margin: 0 1ch;
+	white-space: nowrap;
+}
+
+.title::after, .title::before {
+	content: '';
+    background-color: rgb(217, 210, 190);
+	width: 100%;
+	height: 1px;
+	position: relative;
+	top: 1.2em;
+}
+
+.main table {
+    border: none;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.main td {
+    border: none;
+    padding: 0 1ch;
+}
+
+.main .main-img {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .main .main-img {
+        display: table-cell;
+    }
+}
+
+.main a {
+    font-size: 0.8em;
+}
+
+.main a img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.main .brace-left img {
+    margin-right: -3ch;
+}
+
+.main .brace-right img {
+    margin-left: -3ch;
+}
+
+/*--- контакты ---*/
+.contacts {
+    height: 64em;
+    text-align: center;
+}
+
+.contacts .map, .contacts form {
+    width: 100%;
+    display: inline-block;
+    margin-top: 1em;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        height: 35em;
+        text-align: center;
+    }
+    .contacts .map {
+        width: 50%;
+        padding-right: 2.5ch;
+        float: left;
+    }
+    .contacts form {
+        width: 50%;
+        float: right;
+        padding-left: 2.5ch;
+    }
+}
+
+/*--- блок с адресом ---*/
+.map table {
+    width: 40ch;
+    position: absolute;
+    top: 2em;
+    left: 13ch;
+    z-index: 99;
+    visibility: hidden;
+    font-size: 0.8em;
+    padding: 1.2em;
+    text-align: left;
+}
+
+.map:hover table {
+    visibility: visible;
+}
+
+.map tr {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.map td:nth-child(2) {
+    width: 10ch;
+    height: 1em;
+    display: flex;
+    margin-left: 1ch;
+}
+
+.map td:nth-child(2)::after {
+    content: '';
+    border-bottom-style: dotted;
+    width: 100%;
+}
+
+.map td:last-child {
+    width: 20ch;
+}
+
+/*--- форма отправки данных ---*/
+.contacts form * {
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.contacts form input, .contacts form textarea {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.contacts form input {
+    height: 2em;
+    font-size: 1em;
+}
+
+.contacts form textarea {
+    height: 5em;
+    font-family: sans-serif;
+    resize: none;
+}
+
+.contacts form input:focus, .contacts form textarea:focus {
+    background-color: white;
+    border: solid;
+    border-color: rgb(80, 56, 48);
+}
+
+.contacts form button {
+    width: 15ch;
+    height: 3em;
+    float: left;
+    font-size: 1em;
+}
+
+/*--- подвал ---*/
+footer nav {
+    padding: 2em 25%;
+    text-align: center;
+}
+
+.copyright {
+    margin: auto;
+    text-align: center;
+}
+
+.copyright::before {
+    content: '©';
+    display: block;
+    font-size: xx-large;
+}
