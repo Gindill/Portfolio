@@ -8,4 +8,6 @@ Here are examples of my work done in different programming languages.
 
 * **application form** - Registration form of participant of the Olympic games on programming. Use JavaScript and Bootstrap.
 
-* **landing page** - Landing page, responsive design, without bootstrap.
+* **landing page** - Landing page, responsive design, without Bootstrap.
+
+* **calculator** - Form calculation the cost of repair an apartment. The entered data sent by e-mail to the site administrator. Used PHP, jQuery, AJAX.
