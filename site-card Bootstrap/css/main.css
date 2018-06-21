@@ -10,6 +10,8 @@ html,h1,h2,h3,h4,h5,h6,a {
   font-family: "Raleway";
 }
 
+/* меню */
+
 .navbar {
   background: var(--primary-color);
 }
@@ -45,6 +47,8 @@ html,h1,h2,h3,h4,h5,h6,a {
     xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(139,0,139, 0.7)' \
     stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+/* приветствие */
 
 .header {
   height: 100vh;
@@ -89,6 +93,8 @@ html,h1,h2,h3,h4,h5,h6,a {
   line-height: 1.5;
 }
 
+/* общие стили разделов */
+
 .about,
 .portfolio,
 .blog,
@@ -105,6 +111,8 @@ html,h1,h2,h3,h4,h5,h6,a {
   color: var(--primary-color);
   margin: 2rem;
 }
+
+/* описание студии */
 
 .about img {
   width: 100%;
@@ -133,11 +141,15 @@ html,h1,h2,h3,h4,h5,h6,a {
   color: #888;
 }
 
+/* портфолио */
+
 .portfolio img {
   height: 15rem;
   width: 100%;
   margin: 1rem;
 }
+
+/* блог */
 
 .blog .card {
   box-shadow: 0 0 20px #ccc;
@@ -151,6 +163,8 @@ html,h1,h2,h3,h4,h5,h6,a {
 .blog .card-title {
   color: var(--primary-color);
 }
+
+/* команда */
 
 .team .des {
   background: var(--primary-color);
@@ -173,6 +187,8 @@ html,h1,h2,h3,h4,h5,h6,a {
   top: 0;
   border-top-right-radius: 0;
 }
+
+/* контакты */
 
 .contact-form h1 {
   padding: 4rem 0;
