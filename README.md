@@ -13,3 +13,5 @@ Here are examples of my work done in different programming languages.
 * **calculator** - Form calculation the cost of repair an apartment. The entered data sent by e-mail to the site administrator. Used PHP, jQuery, AJAX.
 
 * **site-card Bootstrap** - Template of developer's business card website. Used Bootstrap 4, jQuery.
+
+* **app-test** - Testing knowledge of geography. Used React.JS, Bootstrap 4.
